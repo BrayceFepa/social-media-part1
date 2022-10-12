@@ -39,6 +39,10 @@ function ProfileCard() {
 
           </div>
 
+          <span>
+              My Profile
+          </span>
+
     </div>
   )
 }
