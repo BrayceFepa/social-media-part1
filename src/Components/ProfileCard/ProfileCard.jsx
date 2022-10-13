@@ -4,6 +4,7 @@ import Cover from '../../img/cover.jpg';
 import Profile from '../../img/profileImg.jpg';
 
 function ProfileCard() {
+    const profilePage = true;
   return (
       <div className="profileCard">
           <div className="ProfileImages">
@@ -33,15 +34,27 @@ function ProfileCard() {
                       <span>Followers</span>
                   </div>
 
+                  {profilePage && (
+                      <>
+                          <div className="vl"></div>
+                          <div className="follow">
+                              <span>3</span>
+                              <span>Posts</span>
+                          </div>
+                      </>
+                  )}
+
               </div>
 
               <hr />
 
           </div>
 
-          <span>
+          {profilePage ? '' : <span>
               My Profile
-          </span>
+          </span>}
+
+          
 
     </div>
   )
